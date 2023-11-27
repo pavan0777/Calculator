@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calc.css">
+    <script src="./calc.js" defer></script>
+</head>
+<body>
+    <form id="cotainer" name="cForm">
+        <input type="text" id="display" name="Answer">
+        <div id="buttoncontainer">
+            <input type="button" class="buttons" value="1" onclick="cForm.Answer.value +='1'">
+            <input type="button" class="buttons" value="2" onclick="cForm.Answer.value +='2'">
+            <input type="button" class="buttons" value="3" onclick="cForm.Answer.value +='3'">
+            <input type="button" class="buttons" value="+" onclick="cForm.Answer.value +='+'">
+        </div>
+
+        <div id="buttoncontainer">
+            <input type="button" class="buttons" value="4" onclick="cForm.Answer.value +='4'">
+            <input type="button" class="buttons" value="5" onclick="cForm.Answer.value +='5'">
+            <input type="button" class="buttons" value="6" onclick="cForm.Answer.value +='6'">
+            <input type="button" class="buttons" value="-" onclick="cForm.Answer.value +='-'">
+        </div>
+
+        <div id="buttoncontainer">
+            <input type="button" class="buttons" value="7" onclick="cForm.Answer.value +='7'">
+            <input type="button" class="buttons" value="8" onclick="cForm.Answer.value +='8'">
+            <input type="button" class="buttons" value="9" onclick="cForm.Answer.value +='9'">
+            <input type="button" class="buttons" value="*" onclick="cForm.Answer.value +='*'">
+        </div>
+
+        <div id="buttoncontainer">
+            <input type="button" class="buttons" value="." onclick="cForm.Answer.value +='.'">
+            <input type="button" class="buttons" value="0" onclick="cForm.Answer.value +='0'">
+            <input type="button" class="buttons" value="%" onclick="cForm.Answer.value +='%'">
+            <input type="button" class="buttons" value="/" onclick="cForm.Answer.value +='/'">
+        </div>
+
+        <div id="buttoncontainer">
+            <input type="button" class="specialButtons" value="Clear" onclick="cForm.Answer.value =' '">
+            <input type="button" class="specialButtons" value="=" onclick="cForm.Answer.value= eval(cForm.Answer.value)">
+        </div>
+    </form>
+</body>
+</html>
